@@ -261,15 +261,18 @@ DIVIDE([Revenue 2018] - [Revenue 2015], [Revenue 2015])
 ```
 superstore-sales-analysis/
 ├── README.md
-├── data/
-│   ├── superstore_raw.csv
-│   └── superstore_clean.csv
-├── notebooks/
-│   └── superstore_analysis.ipynb
-├── sql/
-│   └── queries.sql
-├── dashboard/
-│   └── superstore_dashboard.pbix
+├── Data/
+│   ├── clean
+│   │    └──superstore_clean.csv
+│   ├──raw
+│   │   └──superstore_raw.csv
+│   └──db/
+│       └──superstore.db
+│  
+├── py/
+│   └── internova.ipynb
+├── BI/
+│   └── internova dashboard.pbix
 ├── images/
 │   ├── dashboard_overview.png
 │   ├── dashboard_customers.png
@@ -279,8 +282,8 @@ superstore-sales-analysis/
 │   ├── eda_customer_heatmaps.png
 │   ├── eda_cohorts.png
 │   └── eda_geography.png
-└── report/
-    └── Superstore_Final_Report.pdf
+└── Inform/
+    └── Superstore Sales Data Analysis Final Report.pdf
 ```
 
 ---
@@ -300,13 +303,13 @@ jupyter notebook notebooks/superstore_analysis.ipynb
 ```
 
 - The SQL step uses SQLite, which is included with Python (no installation needed).
-- Open `dashboard/superstore_dashboard.pbix` with **Power BI Desktop**.
+- Open `BI/internova dashboard.pbix` with **Power BI Desktop**.
 
 ---
 
 ## 11. 📄 Final Report
 
-The full report (executive summary, method, metrics, six insights with recommendations, and limitations) is in [`report/Superstore_Final_Report.pdf`](report/Superstore_Final_Report.pdf).
+The full report (executive summary, method, metrics, six insights with recommendations, and limitations) is in [`inform/Superstore Sales Data Analysis Final Report.pdf`](report/Superstore_Final_Report.pdf).
 
 ---
 
@@ -314,8 +317,5 @@ The full report (executive summary, method, metrics, six insights with recommend
 
 **Jair Alejandro Forero Rodríguez**
 Data analyst in training
-
-- LinkedIn: [PASTE-LINK-HERE](https://www.linkedin.com/in/YOUR-PROFILE)
-- GitHub: [YOUR-USERNAME](https://github.com/YOUR-USERNAME)
 
 *Project completed as part of the Internova Data Analytics Virtual Internship.*
